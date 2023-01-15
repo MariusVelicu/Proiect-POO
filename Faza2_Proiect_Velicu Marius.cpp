@@ -2805,6 +2805,7 @@ public:
 					}
 
 				}
+				b.echipaSustinuta();
 				cout << b;
 
 			}
@@ -4616,6 +4617,7 @@ int main()
 				Bilet::modificariBilet(bilete[ctBilete], meciuri, ctMeciuri);
 				cout << "\nDetaliile suporterului sunt:" << endl;
 				cin >> suporteri[ctBilete];
+				suporteri[ctBilete].setBilet(bilete[ctBilete]);
 				cout << suporteri[ctBilete];
 				DetaliiSuporter::modificariSuporter(suporteri[ctBilete]);
 				ctBilete++;
